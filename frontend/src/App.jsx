@@ -16,11 +16,11 @@ function App({ children }) {
         </Avatar>
       </div> */}
       
-      <div>
+      <div className="dark">
       <SidebarProvider>
         <AppSidebar />
         <main>
-          
+        
           {children}  
         </main>
       </SidebarProvider>

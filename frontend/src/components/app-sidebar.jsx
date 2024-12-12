@@ -1,6 +1,5 @@
 import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
-
-import {
+import {   
   Sidebar,
   SidebarContent,
   SidebarGroup,
@@ -9,7 +8,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarTrigger,
+  SidebarTrigger, 
 } from "@/components/ui/sidebar";
 
 // Menu items
@@ -43,7 +42,10 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar className="w-64 fixed h-full bg-gray-800 text-white">
+    <Sidebar  variant="floating" collapsible="icon" className="w-64 fixed h-full bg-gray-800 text-white">
+      <SidebarTrigger className="absolute top-2 right-[-40px] p-2 bg-blue-500 text-white rounded-md z-10">
+        
+      </SidebarTrigger>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
@@ -63,10 +65,6 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarTrigger className="absolute top-1 left-64 p-2 m-2 bg-blue-500 text-white rounded-md">
-        ☰ {/* Example trigger icon */}
-      </SidebarTrigger>
     </Sidebar>
-    
   );
 }
