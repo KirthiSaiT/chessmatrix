@@ -46,6 +46,11 @@ const items = [
     url: "#",
     icon: Settings,
   },
+  {
+    title: "Statistics",
+    url: "#",
+    icon: Settings,
+  },
 ];
 
 export function AppSidebar() {
